@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage x:Class="DatatTemplatePerfIssue.NewPage1"
+             xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:DatatTemplatePerfIssue"
+             Title="NewPage1">
+    <ScrollView>
+        <StackLayout>
+            <HorizontalStackLayout>
+                <VerticalStackLayout>
+                    <Button BackgroundColor="Black" Clicked="Button_Clicked" HorizontalOptions="Center" Text="Load Tab 1" TextColor="White" WidthRequest="200" />
+                    <Label x:Name="lb1" />
+                </VerticalStackLayout>
+                <VerticalStackLayout>
+                    <Button BackgroundColor="Black" Clicked="Button_Clicked_1" HorizontalOptions="Center" Text="Load Tab 2" TextColor="White" WidthRequest="200" />
+                    <Label x:Name="lb2" />
+                </VerticalStackLayout>
+                <VerticalStackLayout>
+                    <Button BackgroundColor="Black" Clicked="Button_Clicked_2" HorizontalOptions="Center" Text="Load Tab 3" TextColor="White" WidthRequest="200" />
+                    <Label x:Name="lb3" />
+                </VerticalStackLayout>
+            </HorizontalStackLayout>
+            <Label x:Name="lbLoaded" FontSize="Large" HorizontalOptions="Center" VerticalOptions="Center" />
+            <local:Table x:Name="tb1" />
+            <local:Table x:Name="tb2" />
+            <local:Table x:Name="tb3" />
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
